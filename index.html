@@ -5,13 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proposal</title>
     <!-- CSS only -->
-    
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="initial_question">Will you be my Valentine?</div>
-    <div>
-            <a href="/"><button class="bn632-hover bn24">Yes</button></a>
-            <a href="/"><button class="bn632-hover bn24">No</button></a>
+    <div class="initial_question">Will you go on  a Date with me?</div>
+    <div class="initial_btns">
+        <a href="/">
+            <button class="bn632-hover bn24" onclick="location.href='thankyou.html'" id="yesBtn">I'd Love to</button>
+        </a>
+        <a href="/" class="bn5">No Thank You</a>
     </div>
+
+    <script>
+        document
+        .getElementById("noButton")
+        .addEventListener("click", function () {
+          var yesButton = document.querySelector(
+            'button[onclick*="thankyou.html"]'
+          );
+          var currentFontSize = parseInt(
+            window.getComputedStyle(yesButton).fontSize
+          );
+          yesButton.style.fontSize = currentFontSize + 10 + "px"; // Increase font size by 5px
+        });
+    </script>
+    
 </body>
 </html>
