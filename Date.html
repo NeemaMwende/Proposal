@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/date.css">
     <title>Date</title>
 </head>
 <body>
-    <div>
-        <b>When are you free?</b>
-        <h2>Please pick a date</h2>
-        <input type="date">
-        <button onclick="location.href='places.html'">Continue</button>
-    </div>
+    <h2 title="Choose a date">Please pick a date</h2>
+    <form class="form-group">
+        <label><b>When are you free?</b></label>
+        <div>
+            <input type="date" />
+            <button class="button" type ="submit" formaction="places.html">Continue</button>
+        </div>
+    </form>
 </body>
 </html>

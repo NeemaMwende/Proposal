@@ -5,26 +5,12 @@ body {
     background-color: #fff5e4;
     color: #ff9494;
   }
-  #foodquestion {
+  #thankyou {
     font-size: 50px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
-  .food-item {
-    display: inline-block;
-    margin: 10px;
-    vertical-align: top;
-    color: #ff9494;
-  }
-  .food-item img {
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-    border: 5px solid #ff9494;
-    object-fit: cover;
-    padding: 10px;
-  }
-  .food-item label {
-    display: block;
+  .rizz {
+    margin-bottom: 10 px;
   }
   .button {
     padding: 10px 20px;
@@ -37,5 +23,14 @@ body {
     color: #e67373;
     border-radius: 12px;
     border: 2px solid #ffe3e1;
+    box-shadow: 1px 1px 2px #ff9494;
+    transition: 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #ff9494;
+    color: #ffe3e1;
+    border: 2px solid #ff9494;
+    box-shadow: 1px 1px 2px #ffe3e1;
   }
   
